@@ -1,0 +1,94 @@
+{
+    "示例所有函数使用方式": {
+        "返回首页-只要一个参数可写": {
+            "sleep": 1
+        },
+        "属性滑动-从开始属性到结束属性，页面可见元素": {
+            "locator": {"start_text": "增值税普通发票", "end_text": "全部发票"},
+			"sleep": 1,
+            "type": "text"
+        },
+        "滑动-提供上下左右方式，up，down，left，right，其中times是次数": {
+            "direction": "up",
+			"size": 500,
+            "times": 2,
+            "sleep": 1,
+            "locator": "分类",
+            "type": "text"
+        },
+        "点击-instance为复数参数": {
+            "locator": "确定",
+			"sleep": 1,
+            "type": "text",
+            "instance": 1,
+            "template_path": "/新增地址/新增地址_提交.png"
+        },
+        "按键-虚拟键盘字符码比如：back-返回": {
+          "locator": "back"
+        },
+        "等待": {
+          "sleep": 1
+        },
+        "图片识别点击-提供样本图片目录地址根据当前页面识别": {
+            "template_path": "/新增地址/新增地址_提交.png",
+            "sleep": 1,
+            "instance": 1
+        },
+        "输入-需先点击文本输入框": {
+            "value": "安安利，广东省广州市天河区珠江路新城xx路x号，13833333333",
+            "sleep": 1
+        },
+        "断言-可以直接指定value断言参数，也可以指定csv文档": {
+            "locator": "购物车",
+            "type": "text",
+            "sleep": 1,
+            "value": "13",
+            "sibling" : true,
+            "instance": -2
+        },
+        "支付mock-无参数": {
+            "sleep": 1,
+            "instance": 1,
+            "value": "751009767"
+        },
+        "数字键盘输入": {
+          "value": "4567889",
+          "sleep": 1
+        },
+        "滑动删除-安卓特殊开启删除按钮": {
+            "locator": "安利日用品有限公司",
+			"sleep": 1,
+            "type": "text",
+            "size": 200
+        },
+        "派发电子券-发送一张": {
+            "value": "76177938",
+            "number": "70",
+            "coupon_type": "DA"
+        },
+        "SQL执行-清除电子券": {
+            "sql_query": "DELETE FROM mk_coupon_instance where distributor_number='76134815'",
+			"db_name": "accl_ne_mc_ft3"
+        },
+        "键盘搜索-无搜索按钮": {
+            "sleep": 1
+        },
+        "异步断言-处理快显提示语": {
+            "async_xpath": "//*[@resource-id='com.tencent.mm:id/knx']",
+            "click_steps": [
+                "//*[@resource-id='com.tencent.mm:id/tenpay_keyboard_2']",
+                "//*[@resource-id='com.tencent.mm:id/tenpay_keyboard_2']",
+                "//*[@resource-id='com.tencent.mm:id/ao4']/android.widget.ImageView[1]"
+            ],
+            "sleep": 1,
+            "value": "请注意填写正确的身份证号（身份信息需与收货人信息保持一致）"
+        },
+        "长客会积分派发": {
+            "value": "343244"
+        },
+        "图片识别断言": {
+            "target_text": "调芒兔疫力"
+        }
+
+    }
+}
