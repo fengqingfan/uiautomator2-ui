@@ -1,0 +1,37 @@
+{
+    "默认密码修改": {
+        "点击-修改密码": {
+            "locator": "修改密码",
+			"sleep": 2,
+            "type": "text"
+        },
+        "点击-输入第一次密码": {
+            "locator": "//android.widget.ListView/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]",
+			"sleep": 2,
+            "type": "xpath"
+        },
+        "输入-输入密码": {
+            "value": "amway123",
+            "sleep": 1
+        },
+        "点击-输入确认密码": {
+            "locator": "//android.widget.ListView/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]",
+			"sleep": 2,
+            "type": "xpath"
+        },
+        "输入-输入确认密码": {
+            "value": "amway123",
+            "sleep": 1
+        },
+        "点击-确定": {
+            "locator": "确定",
+			"sleep": 1,
+            "type": "text"
+        },
+        "点击-立即登录": {
+            "locator": "//android.app.Dialog/android.view.View[1]/android.widget.Button[1]",
+			"sleep": 1,
+            "type": "xpath"
+        }
+    }
+}

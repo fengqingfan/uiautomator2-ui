@@ -1,0 +1,9 @@
+findit==0.5.9
+loguru==0.7.2
+Pillow==10.0.0
+py==1.11.0
+pytest==7.4.2
+pytest_html==4.0.2
+Requests==2.31.0
+six==1.16.0
+uiautomator2==2.16.25

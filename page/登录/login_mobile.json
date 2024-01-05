@@ -1,0 +1,58 @@
+{
+	"手机号码登录": {
+		"点击-我的": {
+			"locator": "我的",
+			"sleep": 2,
+			"type": "text"
+		},
+		"点击-立即登录": {
+			"locator": "//android.webkit.WebView/android.view.View[1]/android.view.View[1]/android.view.View[1]",
+			"sleep": 2,
+			"type": "xpath"
+		},
+		"点击-微信授权": {
+			"locator": "微信授权",
+			"sleep": 2,
+			"type": "text"
+		},
+		"点击-手机号登录/账户密码登录": {
+			"locator": "手机号登录/账户密码登录",
+			"sleep": 2,
+			"type": "text"
+		},
+		"点击-账号输入": {
+			"locator": "//*[@resource-id=\"phoneNumberInput\"]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]",
+			"sleep": 1,
+			"type": "xpath"
+		},
+		"输入-账号输入": {
+			"value": "15837082421",
+			"sleep": 1
+		},
+        "点击-同意隐私协议": {
+			"locator": "\uE728 我已阅读并同意《用户协议》和《隐私政策》的所有内容。",
+			"sleep": 1,
+			"type": "text"
+		},
+		"点击-获取验证码": {
+			"locator": "获取验证码",
+			"sleep": 1,
+			"type": "text"
+		},
+		"点击-验证码输入": {
+			"locator": "//*[@resource-id=\"app\"]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]",
+			"sleep": 1,
+            "type": "xpath"
+		},
+        "输入-验证码": {
+            "value": "000000",
+			"sleep": 1
+        },
+
+		"点击-登录按钮": {
+			"locator": "//*[@resource-id='app']/android.view.View[2]/android.view.View[3]",
+			"sleep": 4,
+			"type": "xpath"
+		}
+	}
+}
